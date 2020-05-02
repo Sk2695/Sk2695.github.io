@@ -1,0 +1,345 @@
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'),
+       url('../fonts/lato-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/lato-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-700 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'),
+       url('../fonts/lato-v16-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/lato-v16-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-900 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'),
+       url('../fonts/lato-v16-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/lato-v16-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+html{
+  box-sizing: border-box;
+}
+*,*::before,*::after{
+box-sizing: inherit;/*наследование от родителя*/
+}
+body{
+  font-family: 'Lato';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: rgb(12, 8, 3);
+}
+img{
+  max-width:100% ;
+  height: auto;
+}
+/*Header style start*/
+.wrapper{
+  max-width: 1060px;
+  margin: 0 auto;/*выравнивание по центру*/
+}
+.wrapper-full{
+  max-width: 1262px;
+  margin: 0 auto;
+}
+.section_title{
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  position: relative;
+  padding-bottom:10px ;
+
+}
+.section_title::after{
+  display: block;
+  content: '';
+  width:253px;
+  height: 3px;
+  background-color:rgba(219, 169, 111, .9);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.header{
+  position: fixed;/*Для прикрепления шапки меню при скорллинге, от этого свойства и до width*/
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header_logo{
+font-size: 40px;
+line-height: 60px;
+color: #FFFFFF;
+}
+.header_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 56px;
+}
+
+.header_list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.header_item{
+  margin-right: 82px;
+}
+.header_item:last-child{/*last-child свойство для последнего элемента в списке*/
+  margin-right: 0;
+}
+.header_link{
+  font-size: 18px;
+line-height: 24px;
+color: white;
+text-decoration: none;
+}
+.header_link:hover,.header_link:active,.header_link:focus{
+  opacity: .75;/*Прозрачность элемента*/
+}
+/*Header style end*/
+/*Intro style start*/
+.intro{
+  height: 100vh;
+  background: url(../img/intro.jpg)no-repeat center ;
+  background-size: cover;
+  padding-top: 263px;
+  padding-bottom: 223px;
+  
+
+}
+.cube{
+  height: 100vh;
+  background: black;
+  background-size: cover;
+  
+
+}
+.intro_title{
+  max-width: 619px;
+font-weight: 500;
+font-size: 50px;
+line-height: 60px;
+color: #FFFFFF;
+margin-bottom: 22px;
+}
+.intro_subtitle{
+  max-width: 546px;
+  color: white;
+  font-size: 21px;
+  line-height: 24px;
+  margin-bottom: 59px;
+}
+.search-form_info{
+display: flex;
+flex-wrap: wrap;
+}
+.search-form_field{
+width: 297px;
+background: transparent url(../img/svg/Oval.svg) no-repeat left 2px;
+background-size: 20px;
+border: 0;
+border-bottom: 2px solid #BFC0C5;
+margin-right: 60px;
+padding-left: 43px;
+padding-bottom: 22px;
+font-weight: 500;
+font-size: 18px;
+color: white;
+}
+.search-form_field::placeholder{
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+}
+.search-form_submit{
+padding: 15px 39px;
+text-transform: uppercase;
+font-weight: 500;
+font-size: 24px;
+color: white;
+background: #1B7DFF;
+border: 0;
+}
+.search-form_submit:hover, .search-form_submit:active, .search-form_submit:focus {
+background:#173456 ;
+}
+
+/*Intro style end*/
+
+/*Benefits Style Start*/
+.benefits{
+margin-bottom: 131px;
+}
+.benefits_wrap{
+  max-width: 1262px;
+  background-color:rgba(219, 169, 111, .9);
+  margin: 0 auto;
+  box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);/*Задает тень для бокса*/
+  position: relative;
+}
+.benefits_title{
+width: 100%;
+font-weight: 500;
+font-size: 30px;
+line-height: 42px;
+background-color: rgba(219, 169, 111, .6);
+padding:20px 100px 30px 100px;
+position: absolute;
+top: 0;
+left: 0;
+transform:translateY(-100%);
+color: black;
+
+}
+.benefits_cards{
+display: grid;
+grid-template-columns:repeat(3, 1fr); 
+grid-column-gap:55px;
+padding:0 100px ;
+
+ 
+}
+.benefits_card{
+  grid-column:span 1;
+  margin-bottom: 112px;
+
+}
+.benefits_card-pic{
+  max-width: 66px;
+  margin-bottom: 37px;
+
+}
+.benefits_card_sumb{
+  display: block;
+
+}
+.benefits_card_title{
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+margin-bottom: 26px;
+}
+.benefits_card_desc{
+font-size: 16px;
+line-height: 24px;
+margin-bottom: 39px;
+}
+
+
+.benefits_card_more{
+  display: inline-block;
+  padding-right: 59px;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+  text-decoration: none;
+  background: url(../img/svg/arrow.svg) no-repeat 95% center;
+  transition: .2s all ;
+}
+.benefits_card_more:hover, .benefits_card_more:focus{
+  background: url(../img/svg/arrow.svg) no-repeat right center;
+
+}
+/*Benefits Style End*/
+
+
+/*Places Style Start*/
+.places_caption{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;/*Прибивает элементы к разным концам экрана*/
+  margin-bottom: 36px;
+}
+.places_title{
+  margin-right: 15px;
+}
+.places_view_all{
+  font-size: 16px;
+  color:black;
+  text-decoration: none;
+  padding-right: 59px;
+  background: url(../img/svg/arrow.svg) no-repeat 90% center;
+  transition: .2s all ;
+}
+.places_view_all:hover, .places_view_all:focus{
+opacity: .65;
+}
+.places_cards{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);/*Определяет на сколько контейунеров сетка разделит экран*/
+  grid-gap: 10px;/*Отступы между контейнерами сетки*/
+}
+/* Создание полупрозрачного экрана на какртинке старт*/
+.places_card{
+ position: relative;
+ overflow: hidden; 
+}
+.places_card::after{
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color:rgba(21, 24, 36, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index:2;
+}
+/*Финиш*/
+.places_card:hover .places_card_pic{
+transform:scale(1.05);
+}
+
+.places_card_title{
+  font-size: 50px;
+line-height: 60px;
+color: #FFFFFF;
+position: absolute;
+bottom: 27px;
+left: 29px;
+z-index: 3;
+}
+
+/* Определение для размера картинок, теперь они занимают 3 горизонтальных контейнера*/
+.places_card_lg{
+grid-column: span 3;
+}
+.places_card_sm{
+  grid-column: span 2;
+  }
+
+.places_card_pic{
+  width: 100%;
+  transition:.15s all;
+}
+.places_card_pic_lg{
+height:354px ;
+object-fit: cover;
+}
+.places_card_pic_sm{
+  height:283px ;
+  object-fit: cover;
+  }
+
+.places_card_link{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+/*Places Style End*/
