@@ -37,7 +37,7 @@ body{
   font-size: 16px;
   line-height: 1.2;
   font-weight: normal;
-  color: rgb(12, 8, 3);
+  color:black ;
 }
 img{
   max-width:100% ;
@@ -71,11 +71,18 @@ img{
   left: 0;
 }
 .header{
-  position: fixed;/*Для прикрепления шапки меню при скорллинге, от этого свойства и до width*/
+  position: absolute;/*Для прикрепления шапки меню при скорллинге, от этого свойства и до width*/
   top: 0;
   left: 0;
   width: 100%;
+  transition: .2s linear;
+  padding-bottom: 10px;
+  z-index:999;
 }
+
+
+
+
 .header_logo{
 font-size: 40px;
 line-height: 60px;
@@ -87,6 +94,7 @@ color: #FFFFFF;
   align-items: flex-end;
   justify-content: space-between;
   padding-top: 56px;
+
 }
 
 .header_list{
@@ -95,12 +103,13 @@ color: #FFFFFF;
 }
 .header_item{
   margin-right: 82px;
+  padding-bottom: 9px;
 }
 .header_item:last-child{/*last-child свойство для последнего элемента в списке*/
   margin-right: 0;
 }
 .header_link{
-  font-size: 18px;
+font-size: 18px;
 line-height: 24px;
 color: white;
 text-decoration: none;
@@ -119,20 +128,14 @@ text-decoration: none;
   
 
 }
-.cube{
-  height: 100vh;
-  background: black;
-  background-size: cover;
-  
 
-}
 .intro_title{
-  max-width: 619px;
+max-width: 619px;
 font-weight: 500;
 font-size: 50px;
 line-height: 60px;
 color: #FFFFFF;
-margin-bottom: 22px;
+margin-bottom: 32px;
 }
 .intro_subtitle{
   max-width: 546px;
@@ -200,7 +203,7 @@ position: absolute;
 top: 0;
 left: 0;
 transform:translateY(-100%);
-color: black;
+color: black
 
 }
 .benefits_cards{
@@ -219,6 +222,7 @@ padding:0 100px ;
 .benefits_card-pic{
   max-width: 66px;
   margin-bottom: 37px;
+  margin-top: 20px;
 
 }
 .benefits_card_sumb{
@@ -245,7 +249,7 @@ margin-bottom: 39px;
   line-height: 24px;
   color: black;
   text-decoration: none;
-  background: url(../img/svg/arrow.svg) no-repeat 95% center;
+  background: url(../img/svg/arrow.svg) no-repeat 85% center;
   transition: .2s all ;
 }
 .benefits_card_more:hover, .benefits_card_more:focus{
@@ -256,6 +260,10 @@ margin-bottom: 39px;
 
 
 /*Places Style Start*/
+.places{
+margin-bottom: 131px;
+}
+
 .places_caption{
   display: flex;
   flex-wrap: wrap;
@@ -270,7 +278,7 @@ margin-bottom: 39px;
   font-size: 16px;
   color:black;
   text-decoration: none;
-  padding-right: 59px;
+  padding-right: 40px;
   background: url(../img/svg/arrow.svg) no-repeat 90% center;
   transition: .2s all ;
 }
@@ -343,3 +351,104 @@ object-fit: cover;
   z-index: 4;
 }
 /*Places Style End*/
+
+/*Tours style start*/
+.tours{
+  margin-bottom: 139px;
+}
+.tours_tour{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 0 108px ;
+align-items:center ;
+margin-bottom: 77px;
+}
+
+.tour_info{
+  padding-left: 47px;
+}
+
+.tour_title{
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 70px;
+}
+
+.tour_desc{
+  font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+margin-bottom: 58px;
+}
+.tour_more{
+  font-size: 16px;
+  color:black;
+  text-decoration: none;
+  padding-right: 59px;
+  background: url(../img/svg/arrow.svg) no-repeat 90% center;
+  transition: .2s all ;
+}
+
+.tour_more:hover, .tour_more:focus{
+  opacity: .65;
+  }
+  
+  .tour_sumb{
+    height:354px ;
+    width: 597px;
+    object-fit: cover;
+    }
+
+
+
+
+    .footer_logo{
+      font-size: 40px;
+      line-height: 60px;
+      color: #FFFFFF;
+      }
+      
+      .footer_logotype{
+        margin-left: 30px;
+      }
+      
+      .footer{
+        background: black;
+        padding:80px 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+       justify-content: space-between;
+       display: grid;
+       grid-template-columns:repeat(3, 1fr); 
+       grid-column-gap:55px;
+       text-align: center;
+       
+       
+      }
+      .footer_pic{
+        margin: 0 auto;
+        display: flex;
+        text-align: center;
+      }
+      .footer_pics{
+        grid-column:span 1;
+        text-align: center;
+        
+      }
+      .footer_sumb{
+        text-align: center;
+        color: #FFFFFF;
+      }
+      .comunity_title{
+        color: #FFFFFF;
+      }
+      .adress{
+        color:#FFFFFF;
+      }
+
+
+
+
+   
